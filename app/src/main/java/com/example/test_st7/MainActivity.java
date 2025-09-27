@@ -22,25 +22,31 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     // Khai báo biến
-    EditText   adtA,adtB,edtTong;
-    Button btnTong;
+    EditText tvc,tvk;
+    EditTextNumber   editTextNumber1, editTextNumber2;
+    Button btnClean;
+    Button btntoK;
+    Button btntoC;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // Ánh xạ
-        adtA = findViewById(R.id.adtA);
-        adtB = findViewById(R.id.adtB);
-        edtTong = findViewById(R.id.Tong);
-        btnTong = findViewById(R.id.btnTong);
-        // Gán sự kiện
-        btnTong.setOnClickListener(new View.OnClickListener() {
+        // Ánh xạ các thành phần giao diện
+        editTextNumber = findViewById(R.id.editTextNumber);
+        editTextNumber2 = findViewById(R.id.editTextNumber2);
+        btnClean = findViewById(R.id.btnClean);
+        btntoK = findViewById(R.id.btntoK);
+        btntoC = findViewById(R.id.btntoC);
+        // Xử lý sự kiện khi nhấn nút Clean
+        btnClean.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {// từ adt a => add sang int
-                int a = Integer.parseInt(adtA.getText().toString());
-                int b = Integer.parseInt(adtB.getText().toString());
-                int tong = a + b;
-                edtTong.setText(tong + "");// hiển thị kết quả
+            public void onClick(View v) {
+                int c = Integer.parseInt(editTextNumber.getText().toString());
+                double k = (int) (c + 273.15);
+
+                editTextNumber.setText("");
+                editTextNumber2.setText("");
             }
         });
 

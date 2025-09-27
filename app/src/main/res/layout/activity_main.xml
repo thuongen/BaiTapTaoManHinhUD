@@ -1,65 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/tvc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Độ C"
+        android:textColor="#E64A19"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Độ K"
+        android:textColor="#FBC02D"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btntoK"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chuyển thành độ K" />
+
+        <Button
+            android:id="@+id/btntoC"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chuyển thành độ C" />
+
+    </LinearLayout>
+
     <Button
-        android:id="@+id/btnTong"
-        android:layout_width="142dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="208dp"
-        android:layout_marginTop="50dp"
-        android:allowUndo="true"
-        android:autoText="true"
-        android:clickable="true"
-        android:contextClickable="true"
-        android:cursorVisible="true"
-        android:text="Tính tổng "
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.56" />
-
-    <EditText
-        android:id="@+id/adtA"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnClean"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="14"
-        android:inputType="text"
-        android:hint="Nhap so thu nhat: "
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141" />
-
-    <EditText
-        android:id="@+id/adtB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="14"
-        android:hint="Nhap so thu hai : "
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/adtA"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268" />
-
-    <EditText
-        android:id="@+id/Tong"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="14"
-        android:hint="Ket qua:  "
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/adtB"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.403" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="Clean" />
+</LinearLayout>
