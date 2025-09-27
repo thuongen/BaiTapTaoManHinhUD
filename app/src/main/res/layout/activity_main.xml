@@ -9,88 +9,57 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button7"
-        android:layout_width="106dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="248dp"
+        android:id="@+id/btnTong"
+        android:layout_width="142dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="208dp"
         android:layout_marginTop="50dp"
         android:allowUndo="true"
         android:autoText="true"
         android:clickable="true"
         android:contextClickable="true"
         android:cursorVisible="true"
-        android:text="LƯU"
+        android:text="Tính tổng "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.931" />
+        app:layout_constraintVertical_bias="0.56" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/adtA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="14"
         android:inputType="text"
-        android:hint="Name: "
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.225"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="153dp" />
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="14"
-        android:hint="Email: "
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
-        tools:layout_editor_absoluteY="273dp" />
-
-    <EditText
-        android:id="@+id/editTextPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="456dp"
-        android:ems="14"
-        android:inputType="phone"
-        android:hint="Phone: "
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="14"
-        android:inputType="textPassword"
-        android:hint="Password: "
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        tools:layout_editor_absoluteY="212dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="404dp"
-        android:layout_height="48dp"
-        android:autoText="true"
-        android:fontFamily="sans-serif-light"
-        android:rotationX="5"
-        android:text="KHAI BÁO THÔNG TIN CÁ NHÂN"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="#324BE6"
-        android:textSize="23sp"
-        android:textStyle="bold"
-        android:visibility="visible"
+        android:hint="Nhap so thu nhat: "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.060000002" />
+        app:layout_constraintVertical_bias="0.141" />
+
+    <EditText
+        android:id="@+id/adtB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="14"
+        android:hint="Nhap so thu hai : "
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/adtA"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.268" />
+
+    <EditText
+        android:id="@+id/Tong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="14"
+        android:hint="Ket qua:  "
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/adtB"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
